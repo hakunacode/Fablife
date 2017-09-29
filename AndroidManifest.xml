@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0" package="com.miinu.FabLife">
+	<supports-screens android:anyDensity="true"
+		android:largeScreens="true" android:normalScreens="true"
+		android:resizeable="true" android:smallScreens="true"
+		android:xlargeScreens="true"></supports-screens>
+	<uses-sdk android:targetSdkVersion="7" android:minSdkVersion="4"></uses-sdk>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.READ_OWNER_DATA"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_OWNER_DATA"></uses-permission>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="com.android.vending.BILLING" />
+	
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+		android:name=".Application.FabLifeApplication">
+		<activity android:label="@string/app_name" android:name=".Activity.Splash"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:label="@string/app_name"
+			android:screenOrientation="portrait" android:configChanges="orientation|screenLayout"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:noHistory="false" android:alwaysRetainTaskState="true"
+			android:enabled="true" android:exported="true" android:name=".Activity.main">
+		</activity>
+		<activity android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait" android:name=".Activity.MyJob"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait" android:name=".Activity.StoreList"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait" android:name=".Activity.MyCloset"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait" android:name=".Activity.LookBook"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:screenOrientation="portrait"
+			android:configChanges="orientation|screenLayout" android:name=".Activity.Bank"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait" android:name=".Activity.Cafe"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait" android:configChanges="orientation|screenLayout"
+			android:name=".Activity.Settings"></activity>
+		<activity android:screenOrientation="portrait"
+			android:configChanges="orientation|screenLayout" android:name=".Activity.VIP"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait" android:name=".Activity.Shop"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+			android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait" android:name=".Activity.Welcome"></activity>
+		<activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+			android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait" android:name=".Activity.Preview"></activity>
+		<activity android:screenOrientation="portrait"
+			android:configChanges="orientation|screenLayout" android:label="@string/app_name"
+			android:name=".Activity.LookBook_View" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:screenOrientation="portrait"
+			android:configChanges="orientation|screenLayout" android:name=".Activity.LookBook_Edit"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait" android:configChanges="orientation|screenLayout"
+			android:name=".Activity.LevelUp"></activity>
+		<activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait" android:configChanges="orientation|screenLayout"
+			android:name=".Activity.SelectHairColor"></activity>
+		<activity android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait" android:name=".Activity.Flirt"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></activity>
+		<activity android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait" android:name=".Activity.BotiqueWelcome"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:configChanges="orientation|screenLayout"
+			android:screenOrientation="portrait" android:name=".Activity.BotiqueMain"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:screenOrientation="portrait"
+			android:configChanges="orientation|screenLayout" android:name=".Activity.BotiqueAddStore"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait" android:configChanges="orientation"
+			android:name=".Activity.BotiqueTip"></activity>
+		<activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait" android:configChanges="orientation|screenLayout"
+			android:name=".Activity.Award"></activity>
+		<activity android:configChanges="orientation"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+			android:name=".Activity.BotiqueInfo"></activity>
+		<activity android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+			android:name=".Activity.Start"></activity>
+		<activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:name=".Activity.TwitterWebActivity"></activity>
+		<activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:name=".Activity.OpenfeintActivity" android:screenOrientation="portrait"></activity>
+		<activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait" android:configChanges="orientation|screenLayout"
+			android:name=".Activity.NotifySelect"></activity>
+		<activity android:name="com.openfeint.internal.ui.IntroFlow"
+			android:label="IntroFlow" android:configChanges="orientation|keyboardHidden"
+			android:theme="@style/OFNestedWindow" />
+		<activity android:name="com.openfeint.api.ui.Dashboard"
+			android:label="Dashboard" android:configChanges="orientation|keyboardHidden"
+			android:theme="@style/OFNestedWindow" />
+		<activity android:name="com.openfeint.internal.ui.Settings"
+			android:label="Settings" android:configChanges="orientation|keyboardHidden"
+			android:theme="@style/OFNestedWindow" />
+		<activity android:name="com.openfeint.internal.ui.NativeBrowser"
+			android:label="NativeBrowser" android:configChanges="orientation|keyboardHidden"
+			android:theme="@style/OFNestedWindow" />
+		<receiver android:name=".Purchase.BillingReceiver">
+			<intent-filter>
+			    <action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+				<action android:name="com.android.vending.billing.RESPONSE_CODE" />
+				<action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+			</intent-filter>
+		</receiver>
+		<service android:exported="true" android:enabled="true"
+			android:name=".Purchase.BillingService"></service>
+		<service android:enabled="true"
+			android:exported="true" android:name=".Services.BackService"></service>
+	</application>
+</manifest>
